@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from employee.views import EmployeeView, Agent, login_page, logout_page, employee_details
+from sampletest.employee.views import EmployeeView, Agent, login_page, logout_page, employee_details
 from django.conf import settings
 from django.conf.urls.static import static
 

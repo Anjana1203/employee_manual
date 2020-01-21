@@ -4,9 +4,9 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse, HttpResponseRedirect
 from django.views import View
 
-from employee.models import Employee
+from .models import Employee
 import base64
-from employee.forms import LoginForm, EmployeeForm
+from .forms import LoginForm, EmployeeForm
 from django.contrib.auth import authenticate, logout, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
