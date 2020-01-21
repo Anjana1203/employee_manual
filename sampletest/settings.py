@@ -129,4 +129,4 @@ STATICFILES_DIRS = [os.path.join(BB_DIR, "static")]
 
 LOGIN_URL = '/login/'
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
