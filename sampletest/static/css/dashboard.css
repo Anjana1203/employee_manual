@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+body {
+    background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_wall.png);
+}
+.allUser{
+    background:url('http://clevertechie.com/img/bnet-bg.jpg') #0f2439 no-repeat center top;
+}
+.eachUser{
+    background-color: rgba(25,84,124, 0.5)!important;
+}
+
+.sidebar {
+  width: 240px;
+  height: 100%;
+  background: #293949;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+.sidebar #leftside-navigation ul,
+.sidebar #leftside-navigation ul ul {
+  margin: -2px 0 0;
+  padding: 0;
+}
+.sidebar #leftside-navigation ul li {
+  list-style-type: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.sidebar #leftside-navigation ul li.active > a {
+  color: #1abc9c;
+}
+.sidebar #leftside-navigation ul li.active ul {
+  display: block;
+}
+.sidebar #leftside-navigation ul li a {
+  color: #aeb2b7;
+  text-decoration: none;
+  display: block;
+  padding: 18px 0 18px 25px;
+  font-size: 12px;
+  outline: 0;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.sidebar #leftside-navigation ul li a:hover {
+  color: #1abc9c;
+}
+.sidebar #leftside-navigation ul li a span {
+  display: inline-block;
+}
+.sidebar #leftside-navigation ul li a i {
+  width: 20px;
+}
+.sidebar #leftside-navigation ul li a i .fa-angle-left,
+.sidebar #leftside-navigation ul li a i .fa-angle-right {
+  padding-top: 3px;
+}
+.sidebar #leftside-navigation ul ul {
+  display: none;
+}
+.sidebar #leftside-navigation ul ul li {
+  background: #23313f;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: none;
+}
+.sidebar #leftside-navigation ul ul li a {
+  font-size: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #aeb2b7;
+}
+.dashboardContents{
+    margin-left: 240px;
+}
+.borderBottom{
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+input[type="text"],input[type="email"],input[type="password"], input[type="number"], input[type="file"], select{
+              width:98%;
+              padding:8px 0px 8px 8px;
+              border-radius:5px;
+              box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.3), 0 1px 1px -1px rgba(255,255,255,0.3);
+              background:rgba(0,0,0,0.2) !important;
+              outline:none;
+              border:none;
+              border:1px solid rgba(0,0,0,1);
+              margin-bottom:10px;
+              color:#6E6E6E !important;
+              text-shadow:#000 0px 1px 5px;
+            }
+            button {
+              /*width:98% !important;*/
+              padding:8px !important;
+              border-radius:5px;
+              outline:none;
+              border:none;
+              background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#28D2DE), to(#1A878F));
+              background-image: -webkit-linear-gradient(#28D2DE 0%, #1A878F 100%);
+              background-image: -moz-linear-gradient(#28D2DE 0%, #1A878F 100%);
+              background-image: -o-linear-gradient(#28D2DE 0%, #1A878F 100%);
+              background-image: linear-gradient(#28D2DE 0%, #1A878F 100%) !important;
+              font-size: 14px !important;
+              color:#FFF;
+              text-transform:uppercase;
+              border:1px solid #000 !important;
+              opacity:0.7;
+                -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+              -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+                box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+              border-top:1px solid rgba(255,255,255,0.8)!important;
+              -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255,255,255,0.2)));
+            }
+            select{
+                border: none !important;
+                /* border: 1px solid black !important; */
+                width: 98% !important;
+            }
+            input:focus, select{
+              box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.7), 0 1px 1px -1px rgba(255,255,255,0.3) !important;
+              background-color:rgba(0,0,0,0.3) !important;
+              -webkit-transition:1s ease;
+              -moz-transition:1s ease;
+              -o-transition:1s ease;
+              -ms-transition:1s ease;
+              transition:1s ease;
+              border-color: unset !important;
+            }
+            button:focus{
+              box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.7), 0 1px 1px -1px rgba(255,255,255,0.3) !important;
+              background-color:rgba(0,0,0,0.3) !important;
+              -webkit-transition:1s ease;
+              -moz-transition:1s ease;
+              -o-transition:1s ease;
+              -ms-transition:1s ease;
+              transition:1s ease;
+              border-color: unset !important;
+            }
+            button:hover{
+              opacity:1;
+              cursor:pointer;
+            }
+            input::placeholder {
+                color: #495057 !important;
+            }
+            button{
+                width: 250px !important;
+                margin-right: 15px;
+                margin-top: 10px;
+                float: right;
+            }
+            .userHead{
+                font-size: 16px;
+                color: rgba(250,250,250, 0.7);
+            }
+
+
+.employeeView{
+    width: calc(100% - 260px);
+    margin-left: 300px;
+    padding-top: 30px;
+    text-align: center;
+    /*margin-top: 50px;*/
+}
+.eachEmpView{
+  width: 550px;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: rgba(25,84,124, 0.5)!important;
+}
