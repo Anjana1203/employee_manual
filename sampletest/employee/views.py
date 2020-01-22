@@ -1,15 +1,14 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
-# Create your views here.
+from django.contrib.auth import authenticate, logout, login
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponse, HttpResponseRedirect
 from django.views import View
 
 from .models import Employee
 import base64
 from .forms import LoginForm, EmployeeForm
-from django.contrib.auth import authenticate, logout, login
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class EmployeeView(LoginRequiredMixin, View):
