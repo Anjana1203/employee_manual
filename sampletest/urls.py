@@ -24,6 +24,7 @@ urlpatterns = [
     path('emp/', EmployeeView.as_view(), name='emp'),
     path('agent/', Agent.as_view(), name='agent'),
     path('login/', login_page, name='login'),
+    path('/', login_page, name='Home login'),
     path('logout/', logout_page, name='logout'),
     re_path(r'^emp_view/(?P<emp_id>\d+)/', employee_details, name='emp_view'),
 
